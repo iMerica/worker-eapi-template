@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["esnext", "webworker"],
+    "alwaysStrict": true,
+    "strict": true,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "sourceMap": true
+  },
+  "include": [
+    "./src/*.ts",
+    "./src/**/*.ts",
+    "./__tests__/*.ts",
+    "./__tests__/**/*.ts",
+    "./node_modules/@cloudflare/workers-types/*.ts",
+    "./node_modules/@p-j/eapi-types/*.ts"
+  ]
+}

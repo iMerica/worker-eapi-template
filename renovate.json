@@ -1,0 +1,14 @@
+{
+  "separateMajorMinor": false,
+  "extends": [":preserveSemverRanges", "group:all", "schedule:monthly", ":maintainLockFilesMonthly"],
+  "lockFileMaintenance": {
+    "extends": ["group:all"],
+    "commitMessageAction": "chore(dependencies): update dependencies"
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["node-fetch", "@types/node-fetch"],
+      "allowedVersions": "<3"
+    }
+  ]
+}
